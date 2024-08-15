@@ -1,0 +1,20 @@
+{
+  "name": "frame-attrempt-3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "frog dev"
+  },
+  "dependencies": {
+    "@hono/node-server": "latest",
+    "@neynar/nodejs-sdk": "^1.38.0",
+    "frog": "latest",
+    "hono": "^4"
+  },
+  "devDependencies": {
+    "@types/minimatch": "^5.1.2",
+    "@types/ms": "^0.7.34",
+    "@types/node": "^20.14.11",
+    "typescript": "latest"
+  }
+}
