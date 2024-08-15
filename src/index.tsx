@@ -1,4 +1,5 @@
 import { serveStatic } from '@hono/node-server/serve-static'
+import {serve} from '@hono/node-server'
 import { Button, Frog, TextInput } from 'frog'
 import { devtools } from 'frog/dev'
 //import { neynar } from 'frog/hubs'
@@ -198,3 +199,8 @@ app.frame('/thirdframe', (c) => {
 // })
 
 devtools(app, { serveStatic })
+serve({
+  fetch: app.fetch,
+  port: 3000,
+})
+console.log(`Server is running on port`)
